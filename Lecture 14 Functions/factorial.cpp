@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int fact(int n){
+double fact(int n){
     // base case
     if(n==0)
         return 1;
