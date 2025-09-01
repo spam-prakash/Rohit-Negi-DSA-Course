@@ -15,4 +15,4 @@ int main(){
     cout<<"ENTER CH: ";
     cin>>ch;
     (ch%2==0)?printEven(num,ch):printEven(num,ch-1);
-}
+} 
