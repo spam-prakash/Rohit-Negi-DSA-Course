@@ -29,5 +29,6 @@ int main(){
     generate(ans,n,0,0,s);
      for (int i = 0; i < ans.size(); i++) {
         cout << i+1<<" "<<ans[i] << endl;
+        
     }
 }
