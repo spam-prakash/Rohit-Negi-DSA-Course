@@ -11,6 +11,7 @@ int sum(vector<int> &arr,int target){
         ans+=sum(arr,target-arr[i]);
     }
     return ans;
+    
 }
 
 int main(){
