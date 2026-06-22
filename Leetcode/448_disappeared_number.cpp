@@ -3,23 +3,46 @@
 #include<vector>
 using namespace std;
 
+// int main(){
+//     vector<int>nums={1,1,2};
+//     int n=nums.size();
+//     vector<int>count(n,0);
+//     vector<int>ans;
+
+//     for(int x:nums){
+//         count[x-1]++;
+//     }
+
+//     for(int i=0;i<n;i++){
+//         if(count[i]==0){
+//             ans.push_back(i+1);
+//         }
+//     }
+    
+//     for(int x:ans){
+//         cout<<x<<" ";
+//     }
+// }
+
 int main(){
-    vector<int>nums={1,1,2};
+    vector<int>nums={4,3,2,7,8,2,3,1};
     int n=nums.size();
-    vector<int>count(n,0);
     vector<int>ans;
 
-    for(int x:nums){
-        count[x-1]++;
+    for(int i=0;i<n;i++){
+        int idx=abs(nums[i])-1;
+        if(nums[idx]>0)
+            nums[idx]=-nums[idx];
     }
 
     for(int i=0;i<n;i++){
-        if(count[i]==0){
+        if(nums[i]>0){
             ans.push_back(i+1);
         }
     }
-    
+
     for(int x:ans){
         cout<<x<<" ";
-    }
+    } 
+
 }
