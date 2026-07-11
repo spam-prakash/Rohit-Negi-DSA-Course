@@ -1,0 +1,4 @@
+Original Data: 
+56 67 123 78 89 
+Sorted Data: 
+56 67 78 89 123 
