@@ -50,7 +50,6 @@ int main(){
             Tail->next = Tail->next->next;
             delete TempDel;
         }
-        
     }
 
     // PRINT
