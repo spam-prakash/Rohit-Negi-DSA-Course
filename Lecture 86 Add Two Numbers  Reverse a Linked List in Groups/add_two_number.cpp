@@ -93,7 +93,6 @@ int main(){
     Node *head2 = new Node(list2[0]);
     createSingular(list1,1,list1.size(),head1);
     createSingular(list2,1,list2.size(),head2);
-
     displayLinkedList(head1);
     displayLinkedList(head2);
 
